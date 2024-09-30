@@ -308,7 +308,7 @@ var instruction_node = {
     }
     if (sumInstructTime <= instructTimeThresh * 1000) {
       feedback_instruct_text =
-        'Read through instructions too quickly.  Please take your time and make sure you understand the instructions.  Press <strong>enter</strong> to continue.'
+        '시간을 충분히 가지고 읽어보세요. 안내문의 내용을 이해하고 넘어가길 바랍니다.  계속하려면 <strong>enter</strong> 키를 누르세요.'
       return true
     } else if (sumInstructTime > instructTimeThresh * 1000) {
       feedback_instruct_text =
