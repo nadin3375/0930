@@ -269,7 +269,7 @@ var score_scale = [
 /* define static blocks */
 
 var feedback_instruct_text =
-  '연구에 참여해 주셔서 감사합니다.<br><br> 계속하시려면 <strong>enter</strong> 키를 누르세요.'
+  '연구에 참여해 주셔서 감사합니다.<br><br> 계속하려면 <strong>enter</strong> 키를 누르세요.'
 var feedback_instruct_block = {
   type: 'poldrack-text',
   cont_key: [13],
@@ -308,11 +308,11 @@ var instruction_node = {
     }
     if (sumInstructTime <= instructTimeThresh * 1000) {
       feedback_instruct_text =
-        '시간을 충분히 가지고 읽어보세요. 안내문의 내용을 이해하고 넘어가길 바랍니다.  계속하려면 <strong>enter</strong> 키를 누르세요.'
+        '시간을 충분히 가지고 읽어보세요. 설명의 내용을 이해하고 넘어가길 바랍니다.  계속하려면 <strong>enter</strong> 키를 누르세요.'
       return true
     } else if (sumInstructTime > instructTimeThresh * 1000) {
       feedback_instruct_text =
-        'Done with instructions. Press <strong>enter</strong> to continue.'
+        '설명이 종료되었습니다. 계속하려면 <strong>enter</strong> 키를 누르세요.'
       return false
     }
   }
@@ -391,7 +391,7 @@ var practice_node_1 = {
         return false
       } else if (practice_tries > practice_thresh) {
         practice_tries = 0
-        practice_feedback_text = "That is incorrect, but we'll move on. Please press <strong>Enter</strong> to continue."
+        practice_feedback_text = "오답이지만, 다음으로 넘어가겠습니다. 계속하려면 <strong>Enter</strong> 키를 누르세요."
         return false
       }
     }
