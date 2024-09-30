@@ -453,7 +453,7 @@ var practice_node_2 = {
         practice_tries = 0
         return false
       } else if (practice_tries > practice_thresh) {
-        practice_feedback_text = "That is incorrect, but we'll move on. Please press <strong>Enter</strong> to continue."
+        practice_feedback_text = "오답이지만, 다음으로 넘어가겠습니다. 계속하려면 <strong>Enter</strong> 키를 누르세요."
         practice_tries = 0
         return false
       }
